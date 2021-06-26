@@ -16,9 +16,10 @@ public class DownloadFileTests {
     @Test
     public void selenideDownloadReadmeTest() throws IOException {
 
+        //Download file and convert content to string
         open("https://github.com/selenide/selenide/blob/master/README.md");
         File downloadedFile = $("#raw-url").download();
-        String fileContent = Files.readTextFormFile(downloadedFile);
+        String fileContent = Files.readTextFromFile(downloadedFile);
 
         assertThat(fileContent, containsString("Selenide is based on and is compatible to Selenium WebDriver 2.0+ and 3.0+"));
 
