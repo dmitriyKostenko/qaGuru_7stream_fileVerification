@@ -12,11 +12,11 @@ import static utils.Files.getPdf;
 public class PdfFileTest {
 
     @Test
-    public void txtTest() throws IOException {
+    public void pdfTest() throws IOException {
         String filePath = "./src/test/resources/pdfExample.pdf",
                 expectedText = "Maecenas mauris lectus, lobortis et purus mattis, blandit dictum tellus";
-        PDF pdf = getPdf(filePath);
 
+        PDF pdf = getPdf(filePath);
         assertThat(pdf, containsText(expectedText));
     }
 
