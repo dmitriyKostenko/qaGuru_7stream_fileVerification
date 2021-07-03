@@ -13,7 +13,7 @@ public class XlsFileTest {
     @Test
     public void xlsSimpleTest() {
         String filePath = "./src/test/resources/xlsExample.xls",
-                expectedText = "Country";
+                expectedText = "United States";
 
         XLS xls = getXls(filePath);
         assertThat(xls, XLS.containsText(expectedText));
