@@ -1,0 +1,2 @@
+How can I download some file in my test?
+At some point of our career all of us will face the problem of downloading the file in the test.
